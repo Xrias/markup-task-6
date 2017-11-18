@@ -1,0 +1,241 @@
+.Yandex_Main_Page
+{
+    display: grid;
+    grid-template-areas: 'a k k k b'
+        'm c c d v'
+        'e f f f x'
+        'p g g g z'
+        'p q w l z'
+        'p s u y z';
+}
+
+.city
+{
+    grid-area: a;
+    margin-left: 20px;
+    color: rgb(169, 184, 169);
+}
+
+.properties,
+.content_label,
+input[name='1'],
+.next,
+.joke1,
+.joke2,
+.joke3,
+.joke4,
+.joke5
+{
+    display: none;
+}
+
+input[name='property']
+{
+    margin-bottom: 5px;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+input[name='show_properties']:checked ~ .properties
+{
+    display: block;
+    position: absolute;
+    background-color: black;
+}
+
+input[name='show_properties']:checked ~ .properties > input[name='property']
+{
+    display: block;
+}
+
+input[name='show_properties']:checked ~ .properties > .content_label
+{
+    display: inline;
+    float: left;
+    margin-left: 20px;
+    margin-top: -20px;
+    background-color: black;
+    color: white;
+}
+
+.authorization
+{
+    grid-area: b;
+}
+
+.login::first-letter
+{
+    color: red;
+}
+
+.news
+{
+    grid-area: c;
+}
+
+a
+{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news_city
+{
+    color: rgb(116, 116, 240);
+}
+
+.news_time
+{
+    color: rgb(169, 184, 169);
+    font-size: 100%;
+}
+
+li
+{
+    margin-top: 10px;
+}
+
+.advertising
+{
+    width: 200px;
+    grid-area: d;
+    margin-bottom: 20px;
+}
+
+.advertising_photo
+{
+    width: 80%;
+}
+
+.search_header
+{
+    grid-area: e;
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+
+.search_header::first-letter
+{
+    color: red;
+}
+
+.search
+{
+    grid-area: f;
+}
+
+.search_link
+{
+    margin-bottom: 7px;
+}
+
+.search_link > a
+{
+    margin-right: 20px;
+}
+
+.search_line > input
+{
+    width: 90%;
+    height: 20px;
+    border: 2px solid rgb(253, 207, 2);
+}
+
+.search_button
+{
+    float: right;
+    background-color: rgb(253, 207, 2);
+    border: 0;
+    height: 26px;
+    font-weight: bold;
+    width: 10%;
+    margin-top: -26px;
+}
+
+.search > .pe
+{
+    display: inline;
+}
+
+.panorama_advertising
+{
+    margin-top: 30px;
+    width: 100%;
+    grid-area: g;
+    margin-bottom: 20px;
+}
+
+.panorama_advertising_photo
+{
+    width: 91%;
+    height: 100px;
+}
+
+.most_visited
+{
+    grid-area: q;
+    margin-bottom: 30px;
+}
+
+.TV
+{
+    grid-area: w;
+    margin-bottom: 30px;
+}
+
+.weather
+{
+    grid-area: l;
+    margin-bottom: 30px;
+}
+
+.jokes
+{
+    grid-area: s;
+}
+
+input[id='front-1']:checked ~ .joke1,
+input[id='front-2']:checked ~ .joke2,
+input[id='front-3']:checked ~ .joke3,
+input[id='front-4']:checked ~ .joke4,
+input[id='front-5']:checked ~ .joke5
+{
+    margin-top: 10px;
+    display: block;
+}
+
+input[id='front-1']:checked ~ .next[for='front-2'],
+input[id='front-2']:checked ~ .next[for='front-3'],
+input[id='front-3']:checked ~ .next[for='front-4'],
+input[id='front-4']:checked ~ .next[for='front-5'],
+input[id='front-5']:checked ~ .next[for='front-1']
+{
+    margin-top: 10px;
+    display: block;
+    color: blue;
+    cursor: pointer;
+}
+
+.auto
+{
+    grid-area: u;
+}
+
+.auto_scrollable
+{
+    overflow: auto;
+    max-height: 250px;
+    margin-right: 50px;
+}
+
+.poster
+{
+    grid-area: y;
+}
