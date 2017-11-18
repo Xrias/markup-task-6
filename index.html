@@ -1,9 +1,241 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
+    <main class="Yandex_Main_Page">
+        <div class="city">
+            Екатеринбург
+        </div>
+        <article class="authorization">
+            <input id="show_properties" type="checkbox" name="show_properties">
+            <label for="show_properties">Настройка</label>
+            <div class="properties">
+                <input id="most_visited" type="checkbox" name="property">
+                <label for="most_visited" class="content_label">Посещаемое</label>
+                <input id="TV" type="checkbox" name="property">
+                <label for="TV" class="content_label">Телепрограмма</label>
+                <input id="weather" type="checkbox" name="property">
+                <label for="weather" class="content_label">Погода</label>
+                <input id="jokes" type="checkbox" name="property">
+                <label for="jokes" class="content_label">Анекдоты</label>
+                <input id="auto" type="checkbox" name="property">
+                <label for="auto" class="content_label">Авто</label>
+                <input id="poster" type="checkbox" name="property">
+                <label for="poster" class="content_label">Афиша</label>
+            </div>
+            <form>
+                <p class="login">
+                    <span>Login</span>
+                    <br>
+                    <input type="text" size="20">
+                </p>
+                <p>
+                    <span>Password</span>
+                    <br>
+                    <input type="text" size="20">
+                </p>
+            </form>
+        </article>
+        <article class="news">
+            <a href="#">Сейчас в СМИ</a>
+            <span class="news_city">
+                &nbsp;&nbsp;&nbsp;&nbsp;в Екатеринбурге
+            </span>
+            <span class="news_time">
+                &nbsp;&nbsp;&nbsp;&nbsp;13 ноября, понедельник 16:57
+            </span>
+            <ul>
+                <li>
+                    В Кремле ответили на слова экс-главы ЦРУ о "запуганном" Путиным Трампе
+                </li>
+                <li>
+                    Число жертв землетрясения в Иране и Ираке превысило 350 человек
+                </li>
+                <li>
+                    Вероятной целью проникновения в РФ украинского дрона назвали шпионаж
+                </li>
+                <li>
+                    Кремль рассказал о местонахождении не явившегося на суд Сечина
+                </li>
+                <li>
+                    Кремль прокомментировал перенос послания Путина Федеральному собранию
+                </li>
+            </ul>
+        </article>
+        <article class="advertising">
+            <img src="kot.jpg" alt="Котик" class="advertising_photo">
+            <br>
+            <a href="#">32 котика студентам на Яндекс.Муррркет</a>
+            <span>Бесплатно и навсегда</span>
+        </article>
+        <header class="search_header">
+            Яндекс
+        </header>
+        <article class="search">
+            <div class="search_link">
+                <a href="#">Видео</a>
+                <a href="#">Картинки</a>
+                <a href="#">Новости</a>
+                <a href="#">Карты</a>
+                <a href="#">Маркет</a>
+                <a href="#">Переводчик</a>
+                <a href="#">Музыка</a>
+                <a href="#">eщё</a>
+            </div>
+            <div class="pe  ">
+                <form class="search_line">
+                    <input type="text">
+                </form>
+                <button class="search_button">Найти</button>
+            </div>
+            <span>Найдется все. Например,
+                <span class="news_time">выхожу один я на дорогу</span>
+            </span>
+        </article>
+        <article class="panorama_advertising">
+            <img src="panorama.jpg" alt="Город" class="panorama_advertising_photo">
+        </article>
+        <article class="most_visited">
+            <a href="#">Посещаемое</a>
+            <p>
+                <span>Маркет -</span> китайская распродажа</p>
+            <p>
+                <span>Авто.ру -</span> Туссан третьей серии</p>
+            <p>
+                <span>Недвижимость -</span> продажа студии</p>
+            <p>
+                <span>Работа -</span> охранником</p>
+            <p>
+                <span>Коллекции -</span> как мелировать волосы</p>
+            <p>
+                <span>Авиабилеты -</span> из Екатеринбурга</p>
+        </article>
+        <article class="TV">
+            <a href="#">Телепрограмма</a>
+            <p>
+                <span>Маркет -</span> китайская распродажа</p>
+            <p>
+                <span>Авто.ру -</span> Туссан третьей серии</p>
+            <p>
+                <span>Недвижимость -</span> продажа студии</p>
+            <p>
+                <span>Работа -</span> охранником</p>
+            <p>
+                <span>Коллекции -</span> как мелировать волосы</p>
+            <p>
+                <span>Авиабилеты -</span> из Екатеринбурга</p>
+        </article>
+        <article class="weather">
+            <a href="#">Погода</a>
+            <p>
+                <span>Маркет -</span> китайская распродажа</p>
+            <p>
+                <span>Авто.ру -</span> Туссан третьей серии</p>
+            <p>
+                <span>Недвижимость -</span> продажа студии</p>
+            <p>
+                <span>Работа -</span> охранником</p>
+            <p>
+                <span>Коллекции -</span> как мелировать волосы</p>
+            <p>
+                <span>Авиабилеты -</span> из Екатеринбурга</p>
+        </article>
+        <article class="jokes">
+            <a href="#">Лучшие анекдоты</a>
+            <input id="front-1" name="1" type="radio" checked>
+            <input id="front-2" name="1" type="radio">
+            <input id="front-3" name="1" type="radio">
+            <input id="front-4" name="1" type="radio">
+            <input id="front-5" name="1" type="radio">
+            <label for="front-1" class="next">Показать еще</label>
+            <label for="front-2" class="next">Показать еще</label>
+            <label for="front-3" class="next">Показать еще</label>
+            <label for="front-4" class="next">Показать еще</label>
+            <label for="front-5" class="next">Показать еще</label>
+            <div class="joke1">
+                <p>
+                    <span>Маркет -</span> китайская распродажа</p>
+            </div>
+            <div class="joke2">
+                <p>
+                    <span>Маркет -</span> японская распродажа</p>
+            </div>
+            <div class="joke3">
+                <p>
+                    <span>Маркет -</span> русская распродажа</p>
+            </div>
+            <div class="joke4">
+                <p>
+                    <span>Маркет -</span> немецкая распродажа</p>
+            </div>
+            <div class="joke5">
+                <p>
+                    <span>Маркет -</span> литовская распродажа</p>
+            </div>
+        </article>
+        <article class="auto">
+            <a href="#">Автомобильные новости</a>
+            <article class="auto_scrollable">
+                <p>
+                    <span>Маркет -</span> китайская распродажа</p>
+                <p>
+                    <span>Авто.ру -</span> Туссан третьей серии</p>
+                <p>
+                    <span>Недвижимость -</span> продажа студии</p>
+                <p>
+                    <span>Работа -</span> охранником</p>
+                <p>
+                    <span>Коллекции -</span> как мелировать волосы</p>
+                <p>
+                    <span>Авиабилеты -</span> из Екатеринбурга</p>
+                <p>
+                    <span>Маркет -</span> китайская распродажа</p>
+                <p>
+                    <span>Авто.ру -</span> Туссан третьей серии</p>
+                <p>
+                    <span>Недвижимость -</span> продажа студии</p>
+                <p>
+                    <span>Работа -</span> охранником</p>
+                <p>
+                    <span>Коллекции -</span> как мелировать волосы</p>
+                <p>
+                    <span>Авиабилеты -</span> из Екатеринбурга</p>
+                <p>
+                    <span>Маркет -</span> китайская распродажа</p>
+                <p>
+                    <span>Авто.ру -</span> Туссан третьей серии</p>
+                <p>
+                    <span>Недвижимость -</span> продажа студии</p>
+                <p>
+                    <span>Работа -</span> охранником</p>
+                <p>
+                    <span>Коллекции -</span> как мелировать волосы</p>
+                <p>
+                    <span>Авиабилеты -</span> из Екатеринбурга</p>
+            </article>
+        </article>
+        <article class="poster">
+            <a href="#">Афиша</a>
+            <p>
+                <span>Маркет -</span> китайская распродажа</p>
+            <p>
+                <span>Авто.ру -</span> Туссан третьей серии</p>
+            <p>
+                <span>Недвижимость -</span> продажа студии</p>
+            <p>
+                <span>Работа -</span> охранником</p>
+            <p>
+                <span>Коллекции -</span> как мелировать волосы</p>
+            <p>
+                <span>Авиабилеты -</span> из Екатеринбурга</p>
+        </article>
+    </main>
 </body>
+
 </html>
