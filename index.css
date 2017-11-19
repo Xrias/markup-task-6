@@ -1,6 +1,7 @@
 .Yandex_Main_Page
 {
     display: grid;
+    grid-template-columns: 175px 330px 330px 330px 175px;
     grid-template-areas: 'a k k k b'
         'm c c d v'
         'e f f f x'
@@ -16,6 +17,7 @@
     color: rgb(169, 184, 169);
 }
 
+input[name='property'],
 .properties,
 .content_label,
 input[name='1'],
@@ -27,11 +29,6 @@ input[name='1'],
 .joke5
 {
     display: none;
-}
-
-input[name='property']
-{
-    margin-bottom: 5px;
 }
 
 label
@@ -53,12 +50,40 @@ input[name='show_properties']:checked ~ .properties > input[name='property']
 
 input[name='show_properties']:checked ~ .properties > .content_label
 {
-    display: inline;
-    float: left;
+    display: block;
     margin-left: 20px;
-    margin-top: -20px;
     background-color: black;
     color: white;
+}
+
+input[id='most_visited']:checked ~ main > .most_visited,
+input[id='TV']:checked ~ main > .TV,
+input[id='weather']:checked ~ main > .weather,
+input[id='jokes']:checked ~ main > .jokes,
+input[id='auto']:checked ~ main > .auto,
+input[id='poster']:checked ~ main > .poster
+{
+    display: none;
+}
+
+input[id='most_visited']:checked ~ input[id='jokes']:checked ~ .Yandex_Main_Page
+{
+    grid-template-areas: 'a k k k b'
+        'm c c d v'
+        'e f f f x'
+        'p g g g z'
+        'p w l o z'
+        'p u y o z';
+}
+
+input[id='TV']:checked ~ input[id='auto']:checked ~ .Yandex_Main_Page
+{
+    grid-template-areas: 'a k k k b'
+        'm c c d v'
+        'e f f f x'
+        'p g g g z'
+        'p q l o z'
+        'p u y o z';
 }
 
 .authorization
