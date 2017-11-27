@@ -31,16 +31,29 @@ input[name='1'],
     display: none;
 }
 
+.checkbox_active
+{
+    display: none;
+}
+
+.checkbox
+{
+    max-width: 15px;
+}
+
 label
 {
+    margin-top: -20px;
     cursor: pointer;
 }
 
 input[name='show_properties']:checked ~ .properties
 {
+    margin-top: 20px;
+    margin-left: -20px;
     display: block;
     position: absolute;
-    background-color: black;
+    background-color: white;
 }
 
 input[name='show_properties']:checked ~ .properties > input[name='property']
@@ -51,19 +64,31 @@ input[name='show_properties']:checked ~ .properties > input[name='property']
 input[name='show_properties']:checked ~ .properties > .content_label
 {
     display: block;
+    margin-bottom: 20px;
     margin-left: 20px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
-.m:checked ~ main > .authorization > .properties > .m,
-.t:checked ~ main > .authorization > .properties > .t,
-.w:checked ~ main > .authorization > .properties > .w,
-.j:checked ~ main > .authorization > .properties > .j,
-.a:checked ~ main > .authorization > .properties > .a,
-.p:checked ~ main > .authorization > .properties > .p
+.m:checked ~ main > .authorization > .properties > .content_label > .checkbox_active.m,
+.t:checked ~ main > .authorization > .properties > .content_label > .checkbox_active.t,
+.w:checked ~ main > .authorization > .properties > .content_label > .checkbox_active.w,
+.j:checked ~ main > .authorization > .properties > .content_label > .checkbox_active.j,
+.a:checked ~ main > .authorization > .properties > .content_label > .checkbox_active.a,
+.p:checked ~ main > .authorization > .properties > .content_label > .checkbox_active.p
 {
-    opacity: .5;
+    display: inline-block;
+    max-width: 15px;
+}
+
+.m:checked ~ main > .authorization > .properties > .content_label > .checkbox.m,
+.t:checked ~ main > .authorization > .properties > .content_label > .checkbox.t,
+.w:checked ~ main > .authorization > .properties > .content_label > .checkbox.w,
+.j:checked ~ main > .authorization > .properties > .content_label > .checkbox.j,
+.a:checked ~ main > .authorization > .properties > .content_label > .checkbox.a,
+.p:checked ~ main > .authorization > .properties > .content_label > .checkbox.p
+{
+    display: none;
 }
 
 input[id='most_visited']:checked ~ main > .area_q > .most_visited,
@@ -293,7 +318,7 @@ input[id='front-5']:checked ~ .next[for='front-1']
     position: absolute;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), 
     rgba(255, 255, 255, 1));
-    transform: translateY(200px);
+    transform: translateY(210px);
 }
 
 .TV_img
