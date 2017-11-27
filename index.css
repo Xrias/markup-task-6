@@ -70,35 +70,24 @@ input[name='show_properties']:checked ~ .properties > .content_label
     color: black;
 }
 
-.m:checked ~ main > .authorization > .properties >
- .content_label > .checkbox_active.m,
-.t:checked ~ main > .authorization > .properties >
- .content_label > .checkbox_active.t,
-.w:checked ~ main > .authorization > .properties >
- .content_label > .checkbox_active.w,
-.j:checked ~ main > .authorization > .properties >
- .content_label > .checkbox_active.j,
-.a:checked ~ main > .authorization > .properties >
- .content_label > .checkbox_active.a,
-.p:checked ~ main > .authorization > .properties >
- .content_label > .checkbox_active.p
+.m:checked ~ main > .authorization > .properties > label > .checkbox_active.m,
+.t:checked ~ main > .authorization > .properties > label > .checkbox_active.t,
+.w:checked ~ main > .authorization > .properties > label > .checkbox_active.w,
+.j:checked ~ main > .authorization > .properties > label > .checkbox_active.j,
+.a:checked ~ main > .authorization > .properties > label > .checkbox_active.a,
+.p:checked ~ main > .authorization > .properties > label > .checkbox_active.p
 {
     display: inline-block;
     max-width: 15px;
+    margin-right: 4px;
 }
 
-.m:checked ~ main > .authorization > .properties >
- .content_label > .checkbox.m,
-.t:checked ~ main > .authorization > .properties >
- .content_label > .checkbox.t,
-.w:checked ~ main > .authorization > .properties >
- .content_label > .checkbox.w,
-.j:checked ~ main > .authorization > .properties >
- .content_label > .checkbox.j,
-.a:checked ~ main > .authorization > .properties >
- .content_label > .checkbox.a,
-.p:checked ~ main > .authorization > .properties >
- .content_label > .checkbox.p
+.m:checked ~ main > .authorization > .properties > label > .checkbox.m,
+.t:checked ~ main > .authorization > .properties > label > .checkbox.t,
+.w:checked ~ main > .authorization > .properties > label > .checkbox.w,
+.j:checked ~ main > .authorization > .properties > label > .checkbox.j,
+.a:checked ~ main > .authorization > .properties > label > .checkbox.a,
+.p:checked ~ main > .authorization > .properties > label > .checkbox.p
 {
     display: none;
 }
