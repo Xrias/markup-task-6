@@ -17,6 +17,13 @@
     color: rgb(169, 184, 169);
 }
 
+.properties
+{
+    height: 195px;
+    width: 160px;
+    border: solid 3px;
+}
+
 input[name='property'],
 .properties,
 .content_label,
@@ -43,14 +50,12 @@ input[name='1'],
 
 label
 {
-    margin-top: -20px;
+    margin-top: 2px;
     cursor: pointer;
 }
 
 input[name='show_properties']:checked ~ .properties
 {
-    margin-top: 20px;
-    margin-left: -20px;
     display: block;
     position: absolute;
     background-color: white;
@@ -64,8 +69,8 @@ input[name='show_properties']:checked ~ .properties > input[name='property']
 input[name='show_properties']:checked ~ .properties > .content_label
 {
     display: block;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-left: 3px;
     background-color: white;
     color: black;
 }
@@ -79,7 +84,6 @@ input[name='show_properties']:checked ~ .properties > .content_label
 {
     display: inline-block;
     max-width: 15px;
-    margin-right: 4px;
 }
 
 .m:checked ~ main > .authorization > .properties > label > .checkbox.m,
